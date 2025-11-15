@@ -17,6 +17,7 @@ contract MinimalAccountTest is Test {
     function setUp() public {
         DeployMinimal deployMinimal = new DeployMinimal();
         (helperConfig, minimalAccount) = deployMinimal.deployMinimalAccount();
+        usdc = new ERC20Mock();
     }
 
     // USDC Mint
